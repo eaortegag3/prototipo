@@ -1,0 +1,33 @@
+body{
+    background: #E5E5E5;
+    
+}
+.logo{
+   margin: 20px 0 0 30px;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+.encriptador{
+
+    width: 60%;
+}
+
+.encriptador textarea{
+    width: 600px;
+    height: 300px;
+}
+
+.desencriptador{
+    width: 40%;
+}
+.desencriptador textarea{
+    width: 400px;
+    height: 500px;
+    background-image: url(imagenes/1.png);
+    
+}
