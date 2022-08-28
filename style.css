@@ -1,33 +1,113 @@
+*{
+ font-family: 'Cabin', sans-serif;
+}
+
+
 body{
-    background: #E5E5E5;
+    background-color: #E5E5E5;
+    position: absolute;
+    
+}
+
+header{
+    display: flex;
+    height: 200px;
     
 }
 .logo{
-   margin: 20px 0 0 30px;
+    margin: 40px 0 40px 40px;
 }
+header p{
+    margin: 60px 0 0 60px;
+    font-size: 40px;
+    color: midnightblue;
+}   
 
 main{
-    align-items: center;
-    display: flex;
-    margin-left: 80px;
-    margin-bottom: 50px;
-}
-.encriptador{
-
-    width: 60%;
+    display: inline-flex;
+    width: 100%;
+    height: 400px;
+   
 }
 
-.encriptador textarea{
-    width: 600px;
+.ingresarTexto,.mostrarTexto{
+    width: 45%;
+       
+}
+
+.input-texto, .mensaje{
+    width: 80%;
     height: 300px;
+    margin-left: 60px;
+    border-radius: 5px;
+    border: 2px solid midnightblue;
+
 }
 
-.desencriptador{
-    width: 40%;
+.mensaje{
+    background: url(imagenes/1.jpg) center center no-repeat;
+    background-color: white;
 }
-.desencriptador textarea{
-    width: 400px;
-    height: 500px;
-    background-image: url(imagenes/1.png);
-    
+
+
+.contenedor-principal, .contenedor-copiar{
+    margin-top: 30px;
+    margin-left: 100px;
+  
+}
+
+.decoder{
+    width: 180px;
+    height: 40px;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    background: midnightblue;
+    border-color: midnightblue;
+}
+
+@media screen and (max-width:480px){
+
+header{
+   display: inline;
+}
+
+header p{
+    font-size: 40px;
+    margin: 5px 0 20px 20px;
+}
+
+.logo{
+    scale: 0.8;
+
+}
+main{
+    display:block;
+
+}
+.ingresarTexto,.mostrarTexto{
+    width: 80%; 
+       
+}
+
+.input-texto, .mensaje{
+     font-size: 40px;
+}
+
+.contenedor-principal, .contenedor-copiar{
+    margin-top: 10px;
+    margin-left: 80px;
+  
+}
+.decoder{
+    width: 200px;
+    height: 60px;
+    margin: 10px 10px 20px 0;
+    font-size: 30px;
+   
+}
+   
+
+  
 }

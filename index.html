@@ -7,6 +7,7 @@
      <meta name="viewport" content="width=device-witdh, initial-scale=1.0">
      <link rel="stylesheet" href ="reset.css">
      <link rel="stylesheet" href = "style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
      
      <title>Encriptador</title> 
 </head>
@@ -14,26 +15,26 @@
 <body>
   <header>
     <img class ="logo" src="imagenes/logo.jpg" alt="Logo de Alura">
-    <p>Challenge 01 Alura + Oracle Next Education</p>
+    <p>Alura  -  Challenge 01</p>
   </header>
 
   <main>     
-      <section class = "encriptador">
+      <section class = "ingresarTexto">
          <textarea class ="input-texto" cols="40" rows="6" placeholder="Ingrese su texto aqui"></textarea>
 
-         <div class="botones">
-           <button class="encriptar" onclick="btnEncriptar()">encriptar</button>
-           <button class="desencriptar" onclick="btnBesencriptar()">desencriptar</button>
+         <div class="contenedor-principal">
+           <button class="decoder" onclick="btnEncriptar()">Encriptar</button>
+           <button class="decoder" onclick="btnDesencriptar()">Desencriptar</button>
          </div>
       </section>
 
-      <section class = "desencriptador">
-           <textarea class = "mensaje" cols ="18" rows="8">
+      <section class = "mostrarTexto">
+           <textarea class = "mensaje" cols ="40" rows="6">
             
 
            </textarea >
-           <div>
-              <button class="copiar" onclick="btnCopiar()">Copiar</button>
+           <div class="contenedor-copiar">
+              <button class="decoder" onclick="btnCopiar()">Copiar</button>
            </div>
 
        </section>
